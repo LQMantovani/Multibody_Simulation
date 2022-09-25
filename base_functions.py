@@ -3,7 +3,19 @@ import math
 
 
 def skew_s(a):
-    #Returns the skew_symmetric matrix from a vector
+    '''
+    Returns the skew_symmetric matrix from a vector
+
+    Parameters
+    ----------
+        a: numpy.ndarray or list of floats
+            vector from which the matrix will be constructed.
+    
+    Returns
+    -------
+        Sk_sym: numpy.ndarray
+            The skew symmetric matrix constructed from the vector.
+    '''
     return np.array([[0, -a[2], a[1]],[a[2], 0, -a[0]],[-a[1], a[0], 0]])
 
 
